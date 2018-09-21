@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Virtualni Muzej</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/animations.css" />
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/to-top.js"></script>
+
+</head>
+
+<body>
+<span id="topy"></span>
+<div id="navigation">
+	<nav>
+			<ul class="desktop">
+				<li><a href="#zasto">ZAŠTO</a></li>
+				<li><a href="#tablet">APLIKACIJA</a></li>
+				<li><a href="#djela">POGLEDAJTE</a></li>
+				<li><a href="#preuzmi">PREUZMI</a></li>
+				<li><a href="#kontakt">KONTAKT</a></li>
+			</ul>
+			<span class="cursor" onclick="openNav()">&#9776;</span>
+			<ul id="mobile" class="sidenav">
+				<li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+				<li><a href="#zasto">ZAŠTO</a></li>
+				<li><a href="#tablet">APLIKACIJA</a></li>
+				<li><a href="#djela">POGLEDAJTE</a></li>
+				<li><a href="#preuzmi">PREUZMI</a></li>
+				<li><a href="#kontakt">KONTAKT</a></li>
+			</ul>
+	</nav>
+	<div class="naslov-top">Virtualni Muzej</div>
+</div>
+<header>
+	<div class="heading" id="top">
+		<span class="wheat">Virtualni muzej</span> je prva online zbirka remek djela hrvatske umjetnosti
+	</div>
+</header>
+
+<div class="wrapper zasto">
+	<section id="zasto">
+		<figure class="main-logo"><img src="img/logo.svg" alt=""></figure>
+		<h2>Zašto Virtualni muzej?</h2>
+		<h3>Problem</h3>
+		<ul>
+			<li> Nedovoljna zastupljenost domaće umjetnosti i kulture u javnosti </li>
+			<li>Svedena je na minimum </li>
+			<li>Ljudi u inozemstvu nemaju jasan pregled naše likovne scene</li>
+		</ul>
+		<h3>Razlozi problema</h3>
+		<ul>
+			<li>Teže imovno stanje cijele zemlje </li> 
+			<li>Nedovoljno političke volje za ulaganje u kulturu </li>
+			<li>Globalno nerazumijevanje njezine vrijednosti</li>
+		</ul>
+	</section>
+</div>
+
+<div class="wrapper tablet">
+		<h2 class="rjesenje">Rješenje</h2>
+	<section id="tablet" class="anim">
+		<figure class="tablet--img"><img src="img/android.png" alt=""></figure>
+		<div class="tablet--txt">
+			<h2>ANDROID APP</h2>
+			<p>Aplikacija dostupna na svim android uređajima</p>
+		</div>
+	</section>
+</div>
+
+<div class="wrapper">
+	<section id="djela" class="anim">
+		<h2>U aplikaciji</h2>
+		<ul>
+			<li>
+				<figure><img src="img/kist.svg" alt=""></figure>
+				<figcaption>Cjelokupni pregled najznačajnijih djela hrvatske umjetnosti</figcaption>
+				
+			</li>
+			<li>
+					<figure><img src="img/camera.png" alt=""></figure>
+				<figcaption>Reprodukcija djela</figcaption>
+				</li>
+			<li>
+					<figure><img src="img/artist.png" alt=""></figure>
+				<figcaption>Biografija umjetnika</figcaption>
+				</li>
+			<li>
+					<figure><img src="img/loc.png" alt=""></figure>
+				<figcaption>Lokacija galerije gdje se nalazi</figcaption>
+				</li>
+		</ul>
+	</section>
+</div>
+
+<h2 class="slike--naslov">Pogledajte</h2>
+<div class="racki slike">
+	<div class="slike--hover">
+		<h2 class="slike--umjetnik">Mirko Rački</h2>
+	</div>
+</div>
+
+<div class="vidovic slike">
+		<div class="slike--hover">
+			<h2 class="slike--umjetnik">Emanuel Vidović</h2>
+		</div>
+</div>
+
+<div class="kraljevic slike">
+		<div class="slike--hover">
+			<h2 class="slike--umjetnik">Miroslav Kraljević</h2>
+		</div>
+</div>
+
+<div class="fernkorn slike">
+		<div class="slike--hover">
+			<h2 class="slike--umjetnik">Anton Dominik Fernkorn</h2>
+		</div>
+</div>
+
+<div class="wrapper preuzmi">
+	<h2>... i još puno više</h2>
+	<section id="preuzmi" class="anim">
+		<a href="https://play.google.com/store/apps/details?id=com.deval.virtualmuseum"><div class="hero"><img src="img/gplay.png" alt=""></div></a>
+		
+	</section>
+</div>
+
+<footer>
+	<div class="back-image"></div>
+	<!-- <h2>Kontakt</h2> -->
+	<div id="kontakt">
+		<section id="cform">
+				<aside>
+						<div class="tele"><img src="img/tele.png" alt=""></div>
+						<h5>Radovan Rus</h5>
+						Tel: 098 9143 775
+						<div class="loc"><img src="img/location.png" alt=""></div>
+						<p>Vrbik 8, Zagreb</p>
+					</aside>
+			<form>
+				<div class="flo1">
+				<input type="text" id="name" placeholder="Ime" required="required">
+				<input type="email" id="email" placeholder="Unesi email" required="required">
+				</div>
+				<div class="flo2">
+            <textarea name="message" id="message" rows="9" cols="25" required="required" placeholder="Poruka"></textarea>
+				</div>
+				<button type="submit" class="button">POŠALJI PORUKU</button>
+			</form>
+			
+		</section>
+	</div>
+	<p style="margin-top: 60px;"> </p>
+	<a href="#topy"><i class="fa fa-angle-up"></i></a>
+</footer>
+
+<script>
+function openNav() {
+    document.getElementById("mobile").setAttribute("style", "width: 250px; visibility: visible;");
+}
+
+function closeNav() {
+    document.getElementById("mobile").setAttribute("style", "width: 250px; visibility: hidden;");
+}
+</script>
+<script>
+	$(window).scroll(function() {
+		$('.anim').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+600) {
+				$(this).addClass("bigEntrance");
+			}
+		});
+	});
+</script>
+</body>
+</html>
